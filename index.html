@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Credit Card</title>
+ <!-- StyleSheet -->
+ <link rel="stylesheet" href="/styles.css">
+
+ <!-- Font -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <div class="strip">
+   <div class="card-front">
+    <p id="card-number">0000 0000 0000 0000</p>
+    <div class="card-inside">
+      <p id="card-name">JANE APPLESEED</p>
+      <p> <span id="card-month">00</span> / <span id="card-year">00</span></p>
+    </div>
+   </div>
+ 
+   <div class="card-back">
+    <p id="card-cvc">000</p>
+   </div>
+  </div>
+  <div class="form">
+   <div class="form1">
+
+    <label for="name">CARDHOLDER NAME</label>
+    <input placeholder="e.g. Jane Appleseed" id="name" type="text">
+   <label for="number">CARD NUMBER</label>
+   <input placeholder="e.g. 1234 5678 9123 0000" id="number" maxlength="19" type="text" required>
+   <p id="num-err"></p>
+   </div>
+    <div class="form2">
+     <div class="form-month">
+    <label for="month">EXP (month) </label>
+    <input maxlength="2" placeholder="MM" id="month" type="text">
+    <p id="month-err"></p>
+    </div>
+    <div class="form-year">
+      <label for="year">EXP (year)</label>
+      <input maxlength="2" placeholder="YY" id="year" type="text">
+    </div>
+    <div class="form-cvc">
+     <label for="cvc">CVC</label>
+     <input maxlength="3" placeholder="e.g. 123" id="cvc" type="text">
+     <p id="cvc-err"></p>
+    </div>
+   </div>
+   <div class="thankyou"> 
+   </div>
+    
+    <div class="button">
+      <button id="btn">Confirm</button>
+    </div>
+  </div>
+   
+ <script src="script.js"></script>
+</body>
+</html>
+
